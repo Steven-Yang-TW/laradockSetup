@@ -18,12 +18,15 @@ PMA_PORT=6060
 ```
 
 ## 檢查laravel .env 的mysql 參數
+
+```
 MYSQL_VERSION=latest
 MYSQL_DATABASE=default
 MYSQL_USER=default
 MYSQL_PASSWORD=secret
 MYSQL_PORT=3305
 MYSQL_ROOT_PASSWORD=root
+```
 
 ## 修改 laravel.test.conf.example 然後複製到 laradock/nginx/sites 底下然後改名為 laravel.test.conf
 修改的部份如下(設定讀取index.php的位置)
@@ -33,4 +36,7 @@ root /var/www/{專案名稱}/public;
 ```
 
 ## 啟動 Docker Image 為 Container
+
+```
 docker-compose up -d nginx mysql phpmyadmin
+```
